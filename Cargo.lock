@@ -598,6 +598,8 @@ dependencies = [
  "indicatif",
  "kindle-fix-core",
  "log",
+ "tempfile",
+ "zip",
 ]
 
 [[package]]
