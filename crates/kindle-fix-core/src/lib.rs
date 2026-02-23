@@ -1,6 +1,7 @@
 //! Core library for fixing Kindle-incompatible ebook files.
 
 pub mod error;
+pub mod formats;
 pub mod types;
 
 pub use error::{KindleFixError, Result};
