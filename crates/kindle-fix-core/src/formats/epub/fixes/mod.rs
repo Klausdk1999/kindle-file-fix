@@ -1,5 +1,6 @@
 pub mod body_id;
 pub mod encoding;
+pub mod language;
 
 /// Check if a filename has an HTML/XHTML extension.
 pub(crate) fn is_html_file(filename: &str) -> bool {
