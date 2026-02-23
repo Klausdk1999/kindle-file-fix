@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "crates/kindle-fix-core",
+    "crates/kindle-fix-cli",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Klaus"]
+license = "Apache-2.0"
+repository = "https://github.com/Klausdk1999/kindle-file-fix"

@@ -1,0 +1,18 @@
+[package]
+name = "kindle-fix-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Core library for fixing Kindle-incompatible ebook files"
+
+[dependencies]
+zip = "2"
+quick-xml = "0.37"
+regex = "1"
+thiserror = "2"
+log = "0.4"
+
+[dev-dependencies]
+tempfile = "3"
