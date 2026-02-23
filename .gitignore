@@ -4,3 +4,5 @@
 .idea/
 .vscode/
 *.log
+gui/node_modules/
+gui/dist/

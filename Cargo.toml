@@ -2,6 +2,7 @@
 members = [
     "crates/kindle-fix-core",
     "crates/kindle-fix-cli",
+    "crates/kindle-fix-gui",
 ]
 resolver = "2"
 

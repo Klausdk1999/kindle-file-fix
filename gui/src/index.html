@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindle File Fix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Kindle File Fix</h1>
+        <p class="subtitle">Fix ebook files for Kindle compatibility</p>
+
+        <div id="dropzone" class="dropzone">
+            <p>Drag &amp; drop EPUB files here</p>
+            <button id="selectBtn" type="button">Select Files</button>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" id="keepName">
+                Keep original filename
+            </label>
+        </div>
+
+        <div id="status" class="status" style="display:none"></div>
+
+        <div id="results" class="results"></div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

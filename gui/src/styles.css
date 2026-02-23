@@ -1,0 +1,148 @@
+:root {
+    --bg: #1a1a2e;
+    --surface: #16213e;
+    --primary: #0f3460;
+    --accent: #e94560;
+    --text: #eee;
+    --text-muted: #999;
+    --success: #4caf50;
+    --warning: #ff9800;
+    --error: #f44336;
+    --info: #2196f3;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f5f5f5;
+        --surface: #fff;
+        --primary: #1976d2;
+        --accent: #e94560;
+        --text: #333;
+        --text-muted: #666;
+    }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+main {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+h1 {
+    margin-bottom: 0.25rem;
+    font-size: 1.4rem;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.dropzone {
+    border: 2px dashed var(--text-muted);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.dropzone:hover,
+.dropzone.dragover {
+    border-color: var(--accent);
+    background-color: rgba(233, 69, 96, 0.05);
+}
+
+.dropzone p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.dropzone button {
+    padding: 0.5rem 1.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.dropzone button:hover {
+    opacity: 0.9;
+}
+
+.options {
+    margin: 1rem 0;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.status {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: var(--info);
+    background: rgba(33, 150, 243, 0.1);
+}
+
+.results {
+    margin-top: 1rem;
+}
+
+.result-item {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.result-item h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.result-item h3 small {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.result-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.25rem 0;
+}
+
+.result-item li {
+    padding: 0.15rem 0;
+    font-size: 0.85rem;
+}
+
+.result-item li::before {
+    content: "\2022  ";
+}
+
+.fix { color: var(--success); }
+.warning { color: var(--warning); }
+.error { color: var(--error); }
+.ok { color: var(--info); font-size: 0.85rem; }

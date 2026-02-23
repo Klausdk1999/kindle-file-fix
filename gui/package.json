@@ -1,0 +1,13 @@
+{
+  "name": "kindle-fix-gui-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc && node build.mjs",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@tauri-apps/api": "^2.0.0"
+  }
+}
