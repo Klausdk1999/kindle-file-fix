@@ -1,3 +1,4 @@
+pub mod body_id;
 pub mod encoding;
 
 /// Check if a filename has an HTML/XHTML extension.
